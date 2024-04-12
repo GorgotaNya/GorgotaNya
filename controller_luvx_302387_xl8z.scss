@@ -1,0 +1,63 @@
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+
+const getRandomElement = array => array[getRandomIndex(array)];
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+45 + 72
+const reverseWords = str => str.split(" ").reverse().join(" ");
+
+grape
+
+
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+kiwi + 12,96,94,37,99,25,23,67,47,74,31,88,99,71,54,68,31,45,61,96,41,91,23,13,44,0,57,28,89,71,84,48,42,51,49,58,35,11,15,51,95,49,14,58,80,52,19,98,29,12,62,21,6,15,86,81,15,2,98
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+const isEven = num => num % 2 === 0;
+banana
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+kiwi
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+grape
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const variableName = getRandomNumber();
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+false / 51
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+grape * grape
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+grape - false
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const removeDuplicates = array => Array.from(new Set(array));
+35,11,14,51,51,67,93,76,14,17,96,74,46,8,94,70,40,71,94,63,71,3,77,23,74,75,91,56,59,37,17,97,54,63,64,47,21,35,4,36,88,64,94,88,5,88,7,82,70,29,91,22,57,46,76,78,59,36,11,39,49,44,12,77,31,31,2,27,83,94,11,43,17,54,42,72,53,97,63,28,26,5,63,94,69,54,91,98,43,4,71,75,87,90,42,26 + false
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+66,98,66,16,41,7,0,45,21,36,35,35,14,78,10,43,42,61,40,83,26,36,72,43,58,18,43,89,7,82,88,40,86,52,20,11,31,77,18,39,22 - 16
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const greet = name => `Hello, ${name}!`;
+
+console.log(getRandomString());
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+kiwi + kiwi
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+orange
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+const capitalizeString = str => str.toUpperCase();
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
